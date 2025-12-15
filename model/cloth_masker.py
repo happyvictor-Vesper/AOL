@@ -4,6 +4,8 @@ from typing import Union
 import numpy as np
 import cv2
 from diffusers.image_processor import VaeImageProcessor
+from detectron2.config import get_cfg  # Benar, mengambil dari library yang diinstall
+from detectron2.engine import DefaultPredictor
 import torch
 
 from model.SCHP import SCHP  # type: ignore
